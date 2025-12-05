@@ -1,0 +1,32 @@
+/* DATABASE RELATED QUERIES */
+
+CREATE DATABASE IF NOT EXISTS GOURAI;
+USE GOURAI;
+SHOW DATABASES;
+
+/* CREATING OUR FIRST TABLE */
+
+CREATE TABLE student(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT NOT NULL
+);
+
+INSERT INTO student
+(id,name,age)
+VALUES
+(101,"surendra",25),
+(102,"anushka" ,22),
+(103,"gourai" ,23),
+(104,"sanika" ,29);
+
+SELECT * FROM student;
+
+SHOW TABLES;
+
+
+
+
+ 
+ 
+ 
